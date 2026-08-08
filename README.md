@@ -2,16 +2,16 @@
 
 ## 📌 Project Overview
 
-Project ini merupakan eksperimen **klasifikasi penyakit jantung menggunakan algoritma Random Forest**. Tujuannya adalah mengevaluasi kemampuan Random Forest dalam mengklasifikasikan risiko penyakit jantung berdasarkan berbagai karakteristik pasien.
+This project is an experiment on **heart disease classification using the Random Forest algorithm**. The objective is to evaluate the ability of Random Forest to classify heart disease risk based on various patient characteristics.
 
 ## 📊 Dataset
 
-Dataset yang digunakan adalah **Heart Disease Prediction Dataset** dari Kaggle, dengan **2.181 data dan 14 kolom**.
+The dataset used is the **Heart Disease Prediction Dataset** from Kaggle, containing **2,181 records and 14 columns**.
 
 Target:
 
-* `0` → lebih rendah risiko serangan jantung
-* `1` → lebih tinggi risiko serangan jantung
+* `0` → Lower risk of heart attack
+* `1` → Higher risk of heart attack
 
 ## 🔎 Analysis Process
 
@@ -20,35 +20,35 @@ Target:
 * Data Type Conversion
 * Duplicate Checking
 * Outlier Checking
-* Feature Selection menggunakan Random Forest
+* Feature Selection using Random Forest
 * Train-Test Split **80:20**
 * Random Forest Classification
 * Hyperparameter Tuning
-* Evaluation menggunakan Accuracy, Precision, Recall, F1-Score, dan Confusion Matrix
+* Evaluation using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
 
 ## 🤖 Model & Experiment
 
-Algoritma yang digunakan:
+Algorithm used:
 
 **Random Forest Classifier**
 
-Hyperparameter yang diuji:
+Hyperparameters tested:
 
 * `n_estimators`: 5, 10, 20, 50, 100
 * `max_depth`: 2, 3, 4, 5, 10, None
 * `max_features`: 1, 2
 * `random_state`: 42
 
-Eksperimen dilakukan pada 4 skenario:
+Four experimental scenarios were evaluated:
 
-1. Data asli
-2. Data tanpa duplikasi
-3. Data dengan seleksi fitur
-4. Data tanpa duplikasi dan dengan seleksi fitur
+1. Original data
+2. Data without duplicates
+3. Data with feature selection
+4. Data without duplicates and with feature selection
 
 ## 📈 Best Result
 
-Performa terbaik diperoleh pada **skenario data asli** dengan:
+The best performance was achieved using the **original dataset** with:
 
 ```text
 n_estimators = 100
@@ -63,7 +63,7 @@ max_features = 2
 | Recall    | 97.27% |
 | F1-Score  | 96.61% |
 
-Confusion Matrix:
+### Confusion Matrix
 
 ```text
 [[208, 9],
